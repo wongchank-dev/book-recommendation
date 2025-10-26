@@ -1,3 +1,7 @@
+    html {
+    scroll-behavior: smooth;
+    }
+    
     /* สีพื้นหลังรูป */
     .bg-color-1 {
     background-color: #433258;
@@ -9,12 +13,25 @@
     }
 
     .font-1 {
-        font-family: 'Kanit', sans-serif;
+        font-family: 'Mitr', sans-serif;
         font-weight: 400;
     }
 
-     /* div { 
-        border: 2px solid rgb(124, 116, 124);
+    .font-2 {
+        font-family: 'Pattaya', sans-serif;
+        font-weight: 400;
+    }
+
+    .font-3 {
+        font-size: 15px;
+    }
+
+    .font-4 {
+        font-size: 18px;
+    }
+
+    /* div { 
+        border: 2px solid rgb(236, 233, 236);
         } */
 
     .custom-img {
@@ -22,12 +39,23 @@
         height: auto;
     }
 
+    /* ฟ้อนกล่องข้อความซ้าย */
     .color-font {
         color: #FFFFFF !important;
+        font-size: 31px;
+    }
+
+    .color-font-1 {
+        color: #FFFFFF;
+    }
+
+    .color-font-2 {
+        color: #0900b6;
+        font-size: 27px;
     }
 
     .bg-color-3 {
-        background-color: #255459 ;
+        background-color: #163832 ;
     }
 
     .bg-image-1 {
@@ -38,6 +66,108 @@
         background-repeat: no-repeat;
     } 
 
+    @keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+    }
 
+    .navbar a:active {
+    animation: bounce 0.3s ease;
+    }
 
-  
+    .navbar-1 {
+    font-family: 'Sarabun', monospace;  /* หรือฟอนต์อื่น ๆ ที่คุณต้องการ */
+    font-size: 18px;                        /* ขนาดฟอนต์ */
+    font-weight: normal;                      /* ความหนา */
+    }
+
+    body {
+    background-color: black; /* พื้นหลังสีดำ */
+    color: white;            /* ตัวอักษรสีขาว */
+    }
+
+    .carousel-item {
+    transition: transform 1.2s ease-in-out; /* ค่ามาตรฐานคือ 0.6s — ปรับให้ลื่นขึ้น */
+    }
+
+    .box {
+    width: 300px;
+    height: 150px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    line-height: 150px;
+    border-radius: 20px; /* 👈 กำหนดความโค้งของมุม */
+    }
+
+    .box-1 {
+        border-radius: 20px;
+    }
+
+    /*.box-2 {
+        width: 420px;
+        height: 300px;
+    } */
+
+    .accordion-item-1 {
+        border-radius: 20px;
+        background-color: #015E42;
+        font-family: 'Mitr', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: #FFFFFF;
+    }
+
+    /* ลูกศรใน accordion */
+    .accordion-button::after {
+    filter: invert(1); /* ทำให้ลูกศรเป็นสีขาว */
+    }
+
+    .accordion-button:not(.collapsed) {
+    background-color: #0A5037;   /* เขียวกลาง */
+    color: #FFFFFF;
+    }
+
+    .accordion-button {
+    background-color: #0A5037;   /* เขียวเข้ม */
+    border: none;
+    box-shadow: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    }
+
+    .accordion-item-2 {
+        border-radius: 20px;
+        background-color: #163832;
+        font-family: 'Mitr', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: #FFFFFF;
+    }
+
+    .box-3 {
+    display: flex;
+    justify-content: center; /* จัดกลางแนวนอน */
+    align-items: center;      /* จัดกลางแนวตั้ง */
+    height: 200px;
+    }
+
+    .navbar-toggler {
+    border-color: white; /* เปลี่ยนสีเส้นขอบปุ่ม */
+    }
+
+    .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='white' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+    }
+
+    @media (min-width: 992px) {
+    .navbar-brand { margin-left: 1rem; margin-right: 0; margin-inline: 0; }
+    }
+   
+    .navbar-brand { margin: 0 auto; }
+
+    .brand-icon {
+    height: 40px;      /* ปรับได้ */
+    width: auto;
+    }
